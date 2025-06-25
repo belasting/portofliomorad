@@ -5,7 +5,8 @@
     }
   
     .about-containers {
-      flex-wrap: wrap;
+      gap: 1rem; /* Verminder de gap tussen containers */
+      margin-bottom: 1rem; /* Verminder de onderste marge */
     }
   
     #experience,
@@ -143,8 +144,9 @@
       font-size: 1.25rem;
     }
   
-    .about {
-      margin-top: 5rem;
+    #about {
+      position: relative;
+      padding-top: 2vh; /* Verminder de bovenpadding */
     }
   
     .title {

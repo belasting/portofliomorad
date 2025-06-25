@@ -6,9 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-   overflow-x: hidden;
-  /* font-family: 'Nunito', sans-serif; */
-
+  overflow-x: hidden;
 }
 
 html {
@@ -20,14 +18,12 @@ p {
 }
 
 /* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -69,7 +65,6 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
-
 #hamburger-nav {
   display: none;
 }
@@ -136,24 +131,11 @@ a:hover {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
 /* SECTIONS */
-
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  padding-top: 2vh; /* Verminderd van 4vh */
+  height: auto;
+  margin: 0 10rem 2rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -163,31 +145,31 @@ section {
 }
 
 /* PROFILE SECTION */
-
 #profile {
   display: flex;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
 }
-#profile1 {
-    border-radius: 50%;
-    width: 23rem;
-    height: 23rem;
-    object-fit: cover; /* Voorkomt vervorming */
-    aspect-ratio: 1/1; /* Garandeert een perfect vierkant */
-    display: block; /* Verwijdert standaard witruimte onder images */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
 
-  .section__pic-container {
-    display: flex;
-    height: auto; /* Verwijder vaste hoogte */
-    width: fit-content; /* Pas aan aan de foto */
-    margin: auto 0;
-    border-radius: 50%; /* Voor consistentie */
-    overflow: hidden; /* Snijdt af wat buiten de cirkel valt */
-  }
+#profile1 {
+  border-radius: 50%;
+  width: 23rem;
+  height: 23rem;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  display: block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section__pic-container {
+  display: flex;
+  height: auto;
+  width: fit-content;
+  margin: auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
 
 .section__text {
   align-self: center;
@@ -211,8 +193,6 @@ section {
   font-size: 3rem;
   text-align: center;
   opacity: .92;
-  /* margin-bottom: 2rem; */
-
 }
 
 #socials-container {
@@ -223,15 +203,12 @@ section {
 }
 
 /* ICONS */
-
 .icon {
   cursor: pointer;
   height: 2rem;
-  /* opacity: ; */
 }
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -239,14 +216,6 @@ section {
 }
 
 .btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-  /* font-weight: normal; */
-}
-a .btn {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
@@ -282,21 +251,15 @@ a .btn {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-.btn-container {
-  gap: 1rem;
-}
-
 /* ABOUT SECTION */
-
 #about {
   position: relative;
+  padding-top: 2vh; /* Toegevoegd */
 }
 
 .about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  /* width: 100%; */
+  margin-top: -1rem; /* Trek de containers omhoog */
+  gap: 0.5rem;     /* Verminder ruimte tussen items */
 }
 
 .about-details-container {
@@ -304,12 +267,13 @@ a .btn {
   flex-direction: column;
   width: 60vw;
   margin: auto;
+  margin-top: -1.5rem; /* Trek de inhoud omhoog */
+  padding-top: 4rem; /* Verwijder bovenpadding */
 }
 
 .about-containers,
 .about-details-container {
   display: flex;
-  /* width: 80vw; */
 }
 
 .about-pic {
@@ -330,7 +294,6 @@ a .btn {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-
 }
 
 .section-container {
@@ -338,14 +301,7 @@ a .btn {
   height: 80%;
 }
 
-/* .section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-} */
-
 /* EXPERIENCE SECTION */
-
 #experience {
   position: relative;
 }
@@ -358,9 +314,8 @@ a .btn {
 }
 
 .experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 20rem;
 }
 
 .article-container {
@@ -370,28 +325,24 @@ a .btn {
   flex-direction: row;
   gap: 2.5rem;
   margin: auto;
-  /* margin: 0 3rem; */
   justify-content: space-around;
-
 }
 
 article {
   display: flex;
   width: 10rem;
   justify-content: space-around;
-  /* margin-left: 1rem;
-  /* gap: 0.5rem; */
 }
 
 article .icon {
   cursor: default;
 }
+
 article p {
   visibility: hidden;
 }
 
 /* PROJECTS SECTION */
-
 #projects {
   position: relative;
 }
@@ -406,13 +357,8 @@ article p {
   width: 90%;
   height: 90%;
   object-fit: cover;
-  /* height: 25rem; */
-  /* width: 100%; */
-  /* display: block; */
   margin: auto;
-
 }
-
 
 .project-title {
   margin: 1rem;
@@ -425,27 +371,23 @@ article p {
   border-color: rgb(163, 163, 163);
 }
 
-/* blog  */
-
+/* BLOG */
 .blog-img {
   border-radius: 1rem;
   width: 150px;
   height: 150px;
   object-fit: cover;
-  /* height: 25rem; */
-  /* width: 100%; */
-  /* display: block; */
   margin: auto;
-
 }
 
 /* CONTACT */
-
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 60vh; /* Verminderd van 70vh */
+  padding-top: 2vh; /* Toegevoegd */
+  margin-top: -3rem; /* Toegevoegd */
 }
 
 .contact-info-upper-container {
@@ -455,7 +397,7 @@ article p {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
-  margin: 2rem auto;
+  margin: 1rem auto; /* Aangepast van 2rem */
   padding: 0.5rem;
 }
 
@@ -480,7 +422,6 @@ article p {
 }
 
 /* FOOTER SECTION */
-
 footer {
   height: 26vh;
   margin: 0 1rem;
@@ -490,18 +431,185 @@ footer p {
   text-align: center;
 }
 
-
-.highlight{
+.highlight {
   font-weight: bolder;
 }
 
-
-/* theme */
-.dark-mode{
+/* THEME */
+.dark-mode {
   background-color: rgb(43, 43, 43);
   color: aliceblue;
 }
 
-.whiteText{
+.whiteText {
   color: aliceblue;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .about-containers {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+    margin-bottom: 15rem; /* Verminderd van 20rem */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #profile1 {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .section__pic-container {
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+    margin-bottom: 15rem; /* Verminderd van 20rem */
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5% 2rem; /* Onderste marge toegevoegd */
+  }
+
+  .section__pic-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  #about {
+    padding-top: 1vh; /* Toegevoegd */
+  }
+
+  #contact {
+    height: 50vh; /* Aangepast voor medium schermen */
+    margin-top: -2rem; /* Toegevoegd */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container {
+    margin: 0;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: auto;
+    height: 50vw;
+    justify-content: center;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  #about {
+    padding-top: 1vh;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  #aboutTitle {
+    margin-bottom: 2rem;
+  }
+
+  .text-container {
+    text-align: justify;
+    margin: none;
+    padding: 0;
+  }
+
+  #projects {
+    margin-bottom: 1rem;
+  }
+
+  #contact {
+    height: 45vh; /* Aangepast voor kleine schermen */
+    margin-top: -1rem; /* Toegevoegd */
+  }
 }
